@@ -10,11 +10,14 @@ getline(cin,buf);
 if(buf=="READ" || buf == "ENCRYPT"){
 tester *help = new tester();
 help->encryptalgo();
-return 0;
+delete help;
+help=nullptr;
+return 0x0;
 }
 
 else if (buf == "WRITE"){
 // use testers.cpp
+// send *out = new send()
 
 }
 
