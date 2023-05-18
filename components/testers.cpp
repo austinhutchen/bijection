@@ -50,7 +50,7 @@ public:
     // file i/o
     string filename;
     vector<bitset<8> > out;
-    cout << "Loading from IN.TXT ...." << endl;
+    cout << "Loading from ./txt/IN.TXT ...." << endl;
     out = alg.load();
     cout << "------ENCRYPTION----- " << endl;
     for (int i = 0; i < out.size(); i++) {
