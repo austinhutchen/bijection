@@ -69,7 +69,7 @@ public:
     string buf;
     bool ex = true;
     while (ex) {
-      cout << "Go? (Y/N)" << endl;
+      cout << "Go? (y/n)" << endl;
       getline(cin, buf);
       // lowercase character converter
       alg.lowercase(buf);
