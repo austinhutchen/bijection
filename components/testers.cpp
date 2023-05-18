@@ -44,8 +44,8 @@ public:
     cout << "Enter needle:" << endl;
     cin >> needle;
     cout << alg.strStr(stack, needle) << endl;
-    ;
   }
+  
   void fio() {
     // file i/o
     string filename;
