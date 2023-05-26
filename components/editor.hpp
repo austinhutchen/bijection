@@ -106,14 +106,6 @@ public:
 
 
 
-int main()
-{
-    for (int currentNum = 2; ; currentNum++) {
-        if (isPrime(currentNum)) {
-            std::cout << currentNum << " ";
-        }
-    }
-}
 
   int edit(int &num) {
     int count = 1;

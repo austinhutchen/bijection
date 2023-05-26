@@ -233,6 +233,29 @@ uint b2hx(vector<bitset<8> > input, uint &size){
     hx=b2hx(vect,max);
     return vect;
   }
+  
+bool is_prime(int n) {
+    if (n <= 1) {
+        return false;
+    }
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+ 
+int nearest_prime(int n) {
+    int prime = 0;
+    for (int i = n-1; i >= 2; i--) {
+        if (is_prime(i)) {
+            prime = i;
+            break;
+        }
+    }
+    return prime;
+}
 
 vector<bitset<8> > load(){
 ifstream in;
