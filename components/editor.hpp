@@ -103,6 +103,18 @@ public:
       return 1;
     }
   }
+
+
+
+int main()
+{
+    for (int currentNum = 2; ; currentNum++) {
+        if (isPrime(currentNum)) {
+            std::cout << currentNum << " ";
+        }
+    }
+}
+
   int edit(int &num) {
     int count = 1;
     std::string line;

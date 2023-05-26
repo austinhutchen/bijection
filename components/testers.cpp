@@ -25,7 +25,7 @@ public:
     int cardinality = pow(2, vect.size());
     cout << "ALL " << cardinality << " SUBSETS:" << endl;
     for (int i = 0; i < nvect.size(); i++) {
-      cout << "PSET" << i + 1 << ":";
+        cout << "PSET" << i + 1 << ":";
       if (i == nvect.size() - 1) {
         cout << "∅";
       }
@@ -45,7 +45,15 @@ public:
     cin >> needle;
     cout << alg.strStr(stack, needle) << endl;
   }
-  
+  bool isPrime(int number)
+{
+    for (int a = 2; a < number; a++) {
+        if (number % a == 0) {
+            return false;
+        }
+    }
+    return true;
+}
   void fio() {
     // file i/o
     string filename;
